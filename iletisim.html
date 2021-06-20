@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/detay.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function bilgi() {
+            alert("Bilgi \n Aradığınız kayıt bulunamadı!");
+            document.getElementById('aramakutusu').value = "";
+        }
+    </script>
+
+    <script type="text/javascript" src="jquery.js">
+        $("#zoom_02").elevateZoom({
+            tint: true,
+            tintColour: '#F90',
+            tintOpacity: 0.5
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#000000;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">RAION</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home"></i> Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html"><i class="fa fa-question"></i> Hakkımızda...</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-list"></i> Ürünlerimiz
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="spor_2.html">spor arbaları</a></li>
+                            <li><a class="dropdown-item" href="klasik_1.html">klasik arabaları</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="iletisim.html" tabindex="-1"><i class="fa fa-phone"></i> İletişim</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" id="aramakutusu" type="search" placeholder="Aranacak Kelime" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit" onClick="bilgi();">Ara...</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div style="height:200px;"></div>
+    <div class="row">
+        <div class="col-sm-6">
+            <form class="form-horizontal">
+                <table text align="right">
+
+                    <tr>
+                        <td><input type="text" class="input-lg form-control" style="background-color:transparent; border:solid 1px #999 !important; border-radius:5px;" placeholder="Adınızı Yazın"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" class="input-lg form-control" style="background-color:transparent; border:solid 1px #999 !important; border-radius:5px;" placeholder="Soyadınız Yazın" size="40px"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" class="input-lg form-control" style="background-color:transparent; border:solid 1px #999 !important; border-radius:5px;" placeholder="E-mail/+90"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" placeholder="Başlık Yazın" style="background-color:transparent; border:solid 1px #999 !important; border-radius:5px;" class="input-lg form-control"></td>
+                    </tr>
+
+                    <tr>
+                        <td><textarea class="input-lg form-control" style="background-color:transparent; border:solid 1px #999 !important; border-radius:5px;" rows=6 cols=41 placeholder="Konu"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="right"> <button name="Gönder" type="submit" class="btn btn-block btn-danger">Gönder</button> </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    </div>
+    <div class="col">
+        <div style="height:20px;"></div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <h4 align="center"> Haritadaki Yerimiz</h4>
+                <iframe align="center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.9046511529177!2d29.06122001564427!3d40.211183876038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca3e3be2a5fcbb%3A0xa157db55af825af4!2sYe%C5%9Filova%2C%2011.%20Akar%20Sk.%2C%2016250%20Osmangazi%2FBursa!5e0!3m2!1str!2str!4v1610439434604!5m2!1str!2str"
+                    width="60%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="text-white " style="background-color:rgb(0, 0, 0); ">
+        <div class="row ">
+            <div class="col-sm ">
+            </div>
+            <div class="col-sm row mt-2 ">
+                <div class="text-center ">
+                    &copy; Abdulrahman Kashko 2021
+                </div>
+            </div>
+            <div class="col-sm " style="font-size:2em; ">
+                <a href="# " class="ozel "><i class="fab fa-facebook "></i></a> |
+                <a href="# " class="ozel "><i class="fab fa-twitter "></i></a> |
+                <a href="# " class="ozel "><i class="fab fa-instagram "></i></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </center>
+</body>
+
+</html>

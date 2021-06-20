@@ -1,0 +1,12 @@
+h5 {
+    background: #550D16;
+    border-bottom: 6px solid #000;
+    height: 60px;
+    color: #fff;
+    display: inline-block;
+}
+
+div {
+    flex-grow: 1;
+    width: 33.33%;
+}

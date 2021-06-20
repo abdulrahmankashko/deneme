@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.footer {
+    height: 70px;
+    bottom: 0px;
+    text-align: center;
+    padding-top: 25px;
+    color: rgb(231, 231, 231);
+}
+
+a.ozel {
+    color: rgb(50, 22, 190) !important;
+}
+
+a.ozel:hover {
+    color: rgb(255, 0, 0) !important;
+}
